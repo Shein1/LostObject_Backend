@@ -1,0 +1,28 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    "dotenv-import",
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "config": "./config",
+          "model": "./models",
+          "routes": "./routes",
+          "constants": "./constants"
+        }
+      }
+    ]
+  ]
+}
