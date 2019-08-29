@@ -18,9 +18,12 @@
         "root": ["."],
         "alias": {
           "config": "./config",
-          "model": "./models",
+          "models": "./models",
           "routes": "./routes",
-          "constants": "./constants"
+          "constants": "./constants",
+          "middlewares": "./middleware",
+          "controllers": "./controller",
+          "helpers": "./helpers"
         }
       }
     ]

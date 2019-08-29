@@ -33,7 +33,7 @@ describe("Server API routes with database interaction", () => {
     });
   });
 
-  describe("GET /v1/users", done => {
+  describe("GET /api/users", done => {
     it("should get a list of users", done => {
       chai
         .request(app)
@@ -63,10 +63,9 @@ describe("Server API routes with database interaction", () => {
 
 describe("Server API routes without database interaction", () => {
   beforeEach(done => {
-    db.sync({ force: true })
-      .then(() => {
-        done();
-      });
+    db.sync({ force: true }).then(() => {
+      done();
+    });
   });
 
   describe("GET /v1/users", done => {
