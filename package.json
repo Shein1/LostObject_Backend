@@ -13,6 +13,7 @@
     "seed": "babel-node seeders/seed_object.js"
   },
   "dependencies": {
+    "@babel/node": "^7.5.5",
     "@babel/runtime": "^7.4.5",
     "@mhirba/utils": "^0.0.69",
     "axios": "^0.18.0",
@@ -39,7 +40,6 @@
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
-    "@babel/node": "^7.4.5",
     "@babel/plugin-transform-runtime": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "@babel/register": "^7.4.4",

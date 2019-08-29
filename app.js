@@ -15,12 +15,7 @@ const log = console.log;
   await database.authenticate();
   log("Connected to SQL database!");
   // creates tables from models
-  database.sync({
-    force: true,
-    logging(str) {
-      log(str);
-    }
-  });
+  database.sync();
 })();
 
 app.use(passport.initialize());
